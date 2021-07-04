@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd9c720f8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h4 class="title"> STILL UNDECIDED</h4>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="../pages/milestone1.html" class="nav__link">Milestone 1</a></li>
+                <li class="nav__item"><a href="../pages/milestone2.html" class="nav__link">Milestone 2</a></li>
+                <li class="nav__item"><a href="../pages/milestone3.html" class="nav__link">Milestone 3</a></li>
+                <li class="nav__item"><a href="../pages/milestone4.html" class="nav__link">Milestone 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Header-->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, We are <strong>Still Undecided</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">CSCI 4800 Term Project</p>
+    </section>
+
+    <!--Team Members-->
+    <section class="section-one">
+        <h2 class="section__title section__title--section-oneS" style="margin-bottom: 4rem;">Team Members</h2>
+        <div class="card-wrapper">
+            <div class ="card">
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" alt="" class="profile-img">
+                <h3>Christopher Lee</h3>
+            </div>
+            <div class ="card">
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" alt="" class="profile-img">
+                <h3>Sam Lee</h3>
+            </div>
+            <div class ="card">
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" alt="" class="profile-img">
+                <h3>Nicholas McGlynn</h3>
+            </div>
+            <div class ="card">
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" alt="" class="profile-img">
+                <h3>Huzaif Sheikh</h3>
+            </div>
+            <div class ="card">
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" alt="" class="profile-img">
+                <h3>Tobie Chang</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Short Synopsis-->
+    <section class="about-me">
+        <h2 class="section__title section__title--about">Short Synopsis</h2>
+        <p class="section__subtitle section__subtitle--about">Hybrid Synchronous Learning</p>
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo excepturi velit eveniet quos, maxime sunt
+                vel labore assumenda illum! Dolor amet expedita molestiae consectetur, nam iure sint facere corrupti
+                minus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus, eaque modi quibusdam officia
+                enim cupiditate non corrupti excepturi illum fugit ex odit corporis sapiente. Quasi, qui. Illo, fugit
+                alias!</p>
+        </div>
+
+        <img src="../images/HybridClassroom.jpg" alt="" class="about-me__img">
+    </section>
+
+    <!--Milestones-->
+    <section class="my-work">
+        <h2 class="section__title">Milestones</h2>
+        <div class="portfolio">
+            <figure>
+                <figcaption> 1. Problem Proposal</figcaption>
+                <a href="../pages/milestone1.html" class="portfolio__item">
+                    <img src="../images/milestone1.jpg" alt="" class="portfolio__img">
+                </a>
+            </figure>
+            <figure>
+            <figcaption> 2. Definition & Related Work</figcaption>
+                <a href="../pages/milestone2.html" class="portfolio__item">
+                    <img src="../images/milestone2.jpg" alt="" class="portfolio__img">
+                </a>
+            </figure>
+            <figure>
+            <figcaption> 3. Design Alternatives</figcaption>
+            <a href="../pages/milestone3.html" class="portfolio__item">
+                <img src="../images/milestone3.jpg" alt="" class="portfolio__img">
+            </a>
+            </figure>
+            <figure>
+            <figcaption> 4. Prototyping & Testing</figcaption>
+            <a href="../pages/milestone4.html" class="portfolio__item">
+                <img src="../images/milestone4.jpg" alt="" class="portfolio__img">
+            </a>
+            </figure>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>
