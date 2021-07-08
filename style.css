@@ -504,10 +504,12 @@ figcaption {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 6rem;
   }
 
   .card {
-    margin: 2rem;
+    padding: 1.5rem;
+    margin: 5rem;
     transition: transform 0.5s;
   }
 
@@ -540,4 +542,22 @@ figcaption {
 
 .body h4 {
   text-align: center;
+}
+
+.card span {
+  color: black;
+  font-family: var(--ff-secondary);
+}
+
+.card p {
+  max-width: 20ch;
+  color: black;
+}
+
+figure:hover {
+  transform: scale(1.1);
+}
+
+figure {
+  transition: transform 200ms ease-in-out;
 }
