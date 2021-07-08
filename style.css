@@ -533,3 +533,11 @@ figcaption {
 .body {
   padding: 1em;
 }
+
+.body p {
+  text-indent: 2em;
+}
+
+.body h4 {
+  text-align: center;
+}
