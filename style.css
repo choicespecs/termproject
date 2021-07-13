@@ -514,7 +514,7 @@ figcaption {
   .slide__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 5em;
   }
 }
 
@@ -540,6 +540,13 @@ figcaption {
 }
 .slide__info__title {
   text-align: center;
+}
+
+.slide__info__subtitle {
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  font-style: italic;
 }
 
 .info {
@@ -596,4 +603,12 @@ figure {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--clr-accent);
 }
