@@ -605,10 +605,23 @@ figure {
   transform: scale(1.05);
 }
 
+a,
 a:visited {
   color: inherit;
 }
 
 a:hover {
   color: var(--clr-accent);
+}
+
+iframe {
+  width: 250px;
+  height: 400px;
+}
+
+@media (min-width: 700px) {
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
 }
