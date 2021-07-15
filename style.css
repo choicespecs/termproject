@@ -58,7 +58,7 @@ section {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -379,7 +379,7 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .portfolio__item {
@@ -652,4 +652,8 @@ iframe {
     width: 1300px;
     height: 1000px;
   }
+}
+
+figure {
+  max-width: 350px;
 }
