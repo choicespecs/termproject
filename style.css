@@ -628,8 +628,8 @@ iframe {
 
 @media (min-width: 700px) {
   iframe {
-    width: 560px;
-    height: 315px;
+    width: 600px;
+    height: 500px;
   }
 }
 
