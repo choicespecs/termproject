@@ -619,9 +619,37 @@ iframe {
   height: 400px;
 }
 
+@media (min-width: 500px) {
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+
 @media (min-width: 700px) {
   iframe {
     width: 560px;
     height: 315px;
+  }
+}
+
+@media (min-width: 1000px) {
+  iframe {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  iframe {
+    width: 1000px;
+    height: 800px;
+  }
+}
+
+@media (min-width: 1600px) {
+  iframe {
+    width: 1300px;
+    height: 1000px;
   }
 }
