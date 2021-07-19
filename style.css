@@ -684,8 +684,9 @@ figure {
 }
 
 .mile3-card {
+  position: relative;
+  z-index: 5;
   color: var(--clr-dsecond);
-  background-image: url(./images/milestone2.jpg);
   background-size: cover;
   padding: 10rem 0 0;
   border-radius: 0.5rem;
@@ -835,4 +836,58 @@ figure {
       "text img";
     grid-column-gap: 2em;
   }
+}
+
+.mile3-card.students::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/student.jpg) center center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.mile3-card.students:hover:before {
+  opacity: 0.5;
+}
+
+.mile3-card.teacher::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/teacher.jpg) center center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.mile3-card.teacher:hover:before {
+  opacity: 0.5;
+}
+
+.mile3-card.complexity::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/complexity.jpg) no-repeat center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.mile3-card.complexity:hover:before {
+  opacity: 0.5;
 }
