@@ -687,7 +687,6 @@ figure {
   position: relative;
   z-index: 5;
   color: var(--clr-dsecond);
-  background-size: cover;
   padding: 10rem 0 0;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -769,43 +768,6 @@ figure {
   background-color: var(--clr-neutral-100);
 }
 
-/* this will work on every device that has 'hover' */
-@media (hover) {
-  .card-content {
-    transform: translateY(70%);
-    transition: transform 500ms ease;
-  }
-
-  .mile3-card:hover .card-content,
-  .mile3-card:focus-within .card-content {
-    transform: translateY(0);
-    transition-delay: 500ms;
-  }
-
-  .mile3-card:focus-within .card-content {
-    transition-duration: 0ms;
-  }
-
-  .card-content > *:not(.card-title) {
-    opacity: 0;
-    transition: opacity 500ms linear;
-  }
-
-  .mile3-card .card-content > *:not(.card-title),
-  .mile3-card:focus-within .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 1000ms;
-  }
-
-  .mile3-card:focus-within .card-content > *:not(.card-title) {
-    transition-delay: 500ms;
-  }
-
-  .card-title::after {
-    transform: scaleX(0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -853,7 +815,7 @@ figure {
 }
 
 .mile3-card.students:hover:before {
-  opacity: 0.5;
+  opacity: 0.25;
 }
 
 .mile3-card.teacher::before {
@@ -871,7 +833,7 @@ figure {
 }
 
 .mile3-card.teacher:hover:before {
-  opacity: 0.5;
+  opacity: 0.25;
 }
 
 .mile3-card.complexity::before {
@@ -889,5 +851,42 @@ figure {
 }
 
 .mile3-card.complexity:hover:before {
-  opacity: 0.5;
+  opacity: 0.25;
+}
+
+/* this will work on every device that has 'hover' */
+@media (hover) {
+  .card-content {
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+  }
+
+  .mile3-card:hover .card-content,
+  .mile3-card:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
+  .mile3-card:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  .mile3-card .card-content > *:not(.card-title),
+  .mile3-card:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 1000ms;
+  }
+
+  .mile3-card:focus-within .card-content > *:not(.card-title) {
+    transition-delay: 500ms;
+  }
+
+  .card-title::after {
+    transform: scaleX(0);
+  }
 }
