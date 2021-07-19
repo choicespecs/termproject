@@ -383,6 +383,14 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.portfolio figure {
+  opacity: 0.5;
+}
+
+.portfolio figure:hover {
+  opacity: 1;
+}
+
 .portfolio:hover .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
