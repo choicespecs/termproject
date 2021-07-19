@@ -692,6 +692,9 @@ figure {
   overflow: hidden;
   transition: transform 500ms ease;
   margin: 20px;
+  -webkit-box-shadow: 12px 8px 20px 0px rgba(0, 0, 0, 0.65);
+  box-shadow: 12px 8px 20px 0px rgba(0, 0, 0, 0.65);
+  cursor: pointer;
 }
 
 .mile3-card:hover,
@@ -720,6 +723,12 @@ figure {
   background-color: white;
   padding: 0.25em;
   border-style: inset;
+  transition: all 500ms linear;
+}
+
+.mile3-card:hover .card-title {
+  background-color: var(--clr-accent);
+  border-style: outset;
 }
 
 .card-title::after {
