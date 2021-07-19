@@ -708,7 +708,7 @@ figure {
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / 0.3) 20%,
+    hsl(20 0% 0% / 0.6) 20%,
     hsl(0 0% 0% / 1)
   );
 }
@@ -744,8 +744,8 @@ figure {
   transition: transform 500ms ease;
 }
 
-.card:hover .card-title::after,
-.card:focus-within .card-title::after {
+.mile3-card:hover .card-title::after,
+.mile3-card:focus-within .card-title::after {
   transform: scaleX(1);
 }
 
