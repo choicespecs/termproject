@@ -41,7 +41,7 @@
 /* general styles */
 
 html {
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 
 body {
@@ -722,13 +722,11 @@ figure {
   font-weight: var(--fw-bold);
   background-color: white;
   padding: 0.25em;
-  border-style: inset;
   transition: all 500ms linear;
 }
 
 .mile3-card:hover .card-title {
   background-color: var(--clr-accent);
-  border-style: outset;
 }
 
 .card-title::after {
@@ -786,6 +784,7 @@ figure {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  max-height: 1000px;
 }
 
 @media (min-width: 600px) {
@@ -889,4 +888,9 @@ figure {
   .card-title::after {
     transform: scaleX(0);
   }
+}
+
+.students.info {
+  grid-column: 1/-1;
+  grid-row: 5;
 }
