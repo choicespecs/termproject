@@ -40,10 +40,6 @@
 
 /* general styles */
 
-html {
-  /*scroll-behavior: smooth;*/
-}
-
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -852,8 +848,24 @@ figure {
   opacity: 0.25;
 }
 
+.button-holder {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-back-button {
+  text-align: center;
+  font-weight: 400;
+  border: solid 2.5px black;
+  padding: 2px;
+  width: 100px;
+  border-radius: 20px;
+}
+
 /* this will work on every device that has 'hover' */
-@media (hover) {
+@media (hover: hover) {
   .card-content {
     transform: translateY(70%);
     transition: transform 500ms ease;
@@ -887,9 +899,4 @@ figure {
   .card-title::after {
     transform: scaleX(0);
   }
-}
-
-.students.info {
-  grid-column: 1/-1;
-  grid-row: 5;
 }
