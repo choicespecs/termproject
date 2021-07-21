@@ -416,8 +416,16 @@ header {
   text-decoration: none;
 }
 
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 2px;
+}
+
 .footer__link {
   font-weight: var(--fw-bold);
+  font-size: 0.75em;
 }
 
 .footer__link:hover,
@@ -812,6 +820,36 @@ figure {
   opacity: 0.25;
 }
 
+.mile3-card.user-stories::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/Milestone\ 3\ -\ User\ Stories.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.mile3-card.user-stories::after {
+  content: "";
+  position: absolute;
+  z-index: -30;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #818479;
+}
+
+.mile3-card.user-stories:hover:before {
+  opacity: 0.25;
+}
+
 .mile3-card.teacher::before {
   content: "";
   position: absolute;
@@ -864,8 +902,31 @@ figure {
   border-radius: 20px;
 }
 
+.gallery-back-button:hover {
+  background-color: var(--clr-accent);
+  color: white;
+}
+
 /* this will work on every device that has 'hover' */
 @media (hover: hover) {
+  .card-title.user-stories {
+    width: 300px;
+    text-align: end;
+    transform: translateX(-40%);
+  }
+
+  .mile3-card.user-stories:hover .card-title,
+  .mile3-card.user-stores:focus-within .card-title {
+    transform: translateX(0%);
+    transition-delay: 500ms;
+  }
+
+  .mile3-card:hover .card-content,
+  .mile3-card:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
   .card-content {
     transform: translateY(70%);
     transition: transform 500ms ease;
