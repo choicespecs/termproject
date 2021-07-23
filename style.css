@@ -934,9 +934,21 @@ figure {
   }
 }
 
+@media (min-width: 450px) {
+  .body.solo p {
+    width: 45ch;
+  }
+}
+
 @media (min-width: 500px) {
   .body.solo p {
     width: 50ch;
+  }
+}
+
+@media (min-width: 550px) {
+  .body.solo p {
+    width: 55ch;
   }
 }
 
@@ -946,29 +958,36 @@ figure {
   }
 }
 
+@media (min-width: 650px) {
+  .body.solo p {
+    width: 65ch;
+  }
+}
+
 @media (min-width: 800px) {
   .body.solo p {
     width: 80ch;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .body.solo p {
     width: 100ch;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .body.solo p {
     width: 120ch;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .body.solo p {
-    width: 150ch;
+    width: 140ch;
   }
 }
+
 /* this will work on every device that has 'hover' */
 @media (hover: hover) {
   .card-title.user-stories {
