@@ -309,6 +309,19 @@ header {
   text-align: center;
 }
 
+.section-one.white {
+  background-color: white;
+  color: black;
+}
+
+.section-one.white .section__title--section-one {
+  color: black;
+}
+
+.section-one.white .section__title--section-one::after {
+  background: black;
+}
+
 .section__title--section-one {
   color: var(--clr-accent);
   position: relative;
@@ -551,6 +564,10 @@ figcaption {
 .slide {
   background-color: #333;
   margin-bottom: 2em;
+}
+
+.slide.white {
+  background-color: white;
 }
 .slide__info__title {
   text-align: center;
@@ -922,22 +939,6 @@ figure {
 #gallery-home {
   padding: 2em 2em;
   border-bottom: 1px solid black;
-}
-
-.body.solo p {
-  width: 30ch;
-}
-
-@media (min-width: 400px) {
-  .body.solo p {
-    width: 40ch;
-  }
-}
-
-@media (min-width: 450px) {
-  .body.solo p {
-    width: 45ch;
-  }
 }
 
 @media (min-width: 500px) {
