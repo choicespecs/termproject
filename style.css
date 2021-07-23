@@ -989,6 +989,12 @@ figure {
   }
 }
 
+.iframe-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* this will work on every device that has 'hover' */
 @media (hover: hover) {
   .card-title.user-stories {
