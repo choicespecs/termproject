@@ -593,10 +593,6 @@ figcaption {
   }
 }
 
-.body h4 {
-  text-align: center;
-}
-
 .card span {
   color: black;
   font-family: var(--ff-secondary);
@@ -905,6 +901,27 @@ figure {
 .gallery-back-button:hover {
   background-color: var(--clr-accent);
   color: white;
+}
+
+.img-holder {
+  padding: 2em;
+}
+
+@media (min-width: 800px) {
+  .img-holder {
+    padding: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-holder {
+    padding: 8em;
+  }
+}
+
+#gallery-home {
+  padding: 2em 2em;
+  border-bottom: 1px solid black;
 }
 
 /* this will work on every device that has 'hover' */
