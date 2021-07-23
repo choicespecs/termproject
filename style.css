@@ -924,6 +924,51 @@ figure {
   border-bottom: 1px solid black;
 }
 
+.body.solo p {
+  width: 30ch;
+}
+
+@media (min-width: 400px) {
+  .body.solo p {
+    width: 40ch;
+  }
+}
+
+@media (min-width: 500px) {
+  .body.solo p {
+    width: 50ch;
+  }
+}
+
+@media (min-width: 600px) {
+  .body.solo p {
+    width: 60ch;
+  }
+}
+
+@media (min-width: 800px) {
+  .body.solo p {
+    width: 80ch;
+  }
+}
+
+@media (min-width: 1000px) {
+  .body.solo p {
+    width: 100ch;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body.solo p {
+    width: 120ch;
+  }
+}
+
+@media (min-width: 1400px) {
+  .body.solo p {
+    width: 150ch;
+  }
+}
 /* this will work on every device that has 'hover' */
 @media (hover: hover) {
   .card-title.user-stories {
