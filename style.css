@@ -995,6 +995,12 @@ figure {
   align-items: center;
 }
 
+.links {
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
 /* this will work on every device that has 'hover' */
 @media (hover: hover) {
   .card-title.user-stories {
