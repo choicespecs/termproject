@@ -1056,3 +1056,72 @@ figure {
     transform: scaleX(0);
   }
 }
+
+.mile3-card.students_prototype::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/studentsProto.jpg) center center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.mile3-card.students_prototype:hover:before {
+  opacity: 0.25;
+}
+
+.mile3-card.user-stories::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/Milestone\ 3\ -\ User\ Stories.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.mile3-card.teacher_prototype::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/teacherProto.jpg) center center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.mile3-card.teacher_prototype:hover:before {
+  opacity: 0.25;
+}
+
+.mile3-card.complexity_prototype::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/complexityProto.jpg) no-repeat center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.mile3-card.complexity_prototype:hover:before {
+  opacity: 0.25;
+}
